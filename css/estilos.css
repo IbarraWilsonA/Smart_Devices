@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background: url(../imagen/pexels-krivec-ales-547114.jpg);
+    background-size: cover;
+}
+ul {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    margin: 10px 10px 30px;
+}
+ul li {
+    list-style: none;
+    float: left;
+    padding: 10px 25px;
+    color: #fff;
+    background: #0d9ed5;
+    border-radius: 8px;
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+ul li:hover,
+.active {
+    background-color: white;
+    color: black;
+    height: 20px;
+    box-shadow: 0 0 10px #0d9ed5, 0 0 10px #0d9ed5, 0 0 15px #0d9ed5;
+    
+
+}
+.container {
+    padding: 0 30px;
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.container .box {
+    width: 23%;
+    height: 400px;
+    text-align: center;
+    color: rgba(255,255,255,.5);
+    font-family: arial;
+    font-size: 1.2em;
+    float: left;
+    box-sizing: border-box;
+    margin: 10px;
+    text-transform: uppercase;
+    position: relative;
+}
+.container .box img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+div.box>div.cont_tapa {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0,0,0,0.3);
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+}
+div.box:hover>div.cont_tapa {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+.toggle-mode-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 9999;
+    font-size: 20px;
+}
+
+.toggle-mode-btn {
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.toggle-mode-btn:hover {
+    background-color: #333;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
