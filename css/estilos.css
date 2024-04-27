@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    background: url(../imagen/pexels-krivec-ales-547114.jpg);
+    /*background: url(../imagen/pexels-krivec-ales-547114.jpg);*/
     background-size: cover;
 }
 ul {
@@ -16,7 +16,7 @@ ul {
 ul li {
     list-style: none;
     float: left;
-    padding: 10px 25px;
+    padding: 10px 20px;
     color: #fff;
     background: #0d9ed5;
     border-radius: 8px;
@@ -28,7 +28,6 @@ ul li:hover,
 .active {
     background-color: white;
     color: black;
-    height: 20px;
     box-shadow: 0 0 10px #0d9ed5, 0 0 10px #0d9ed5, 0 0 15px #0d9ed5;
     
 
