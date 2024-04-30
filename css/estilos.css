@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     overflow-x: hidden;
-    /*background: url(../imagen/pexels-krivec-ales-547114.jpg);*/
+    background: url(../imagen/pexels-krivec-ales-547114.jpg);
     background-size: cover;
 }
 ul {
@@ -18,26 +19,23 @@ ul li {
     list-style: none;
     float: left;
     padding: 10px 20px;
-    color: #fff;
-    background: #0d9ed5;
-    border-radius: 8px;
-    margin-right: 20px;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
+    color: #000;
+    /*color: rgb(220, 43, 226);*/
+    margin-right: 15px;
+    font-size: 20px;
 }
 ul li:hover,
 .active {
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 10px #0d9ed5, 0 0 10px #0d9ed5, 0 0 15px #0d9ed5;
-    
-
+    color: #02B1F4;
+    cursor: pointer;
+    /*box-shadow: 0 0 10px #0d9ed5, 0 0 10px #0d9ed5, 0 0 15px #0d9ed5;*/
 }
 .container {
     padding: 0 30px;
     position: relative;
     padding: 30px;
     box-sizing: border-box;
+    border-radius: 15px;
 }
 .container .box {
     width: 23%;
@@ -51,6 +49,7 @@ ul li:hover,
     margin: 10px;
     text-transform: uppercase;
     position: relative;
+    border-radius: 15px;
 }
 .container .box img {
     width: 100%;
@@ -58,6 +57,7 @@ ul li:hover,
     object-fit: cover;
     object-position: center;
     position: relative;
+    border-radius: 15px;
 }
 div.box>div.cont_tapa {
     content: "";
@@ -81,6 +81,7 @@ div.box:hover>div.cont_tapa {
     top: 0;
     visibility: visible;
     opacity: 1;
+    border-radius: 15px;
 }
 
 .toggle-mode-btn {
@@ -101,6 +102,7 @@ div.box:hover>div.cont_tapa {
 
 .toggle-mode-btn:hover {
     background-color: #333;
+    cursor: pointer;
 }
 
 body.dark-mode {
